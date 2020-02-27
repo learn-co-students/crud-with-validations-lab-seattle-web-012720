@@ -1,0 +1,12 @@
+<%= form_for @song do |f| %>
+    Title :<%= f.text_field :title %>
+    Artist Name: <%= f.text_field :artist_name %>
+    Genre: <%= f.text_field :genre %>
+    Released? <%= f.check_box :released %>
+    Release Year <%= f.number_field :release_year %>
+<%= f.submit %>
+<% end %>
+
+<% if flash[:messages] %>
+<%= flash[:messages] %>
+<% end %>
