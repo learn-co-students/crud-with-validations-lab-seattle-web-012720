@@ -1,0 +1,9 @@
+<h1>Song#show</h1>
+
+<ul>Title: <%= @song.title %></ul>
+<ul>Released: <%= @song.released %></ul>
+<ul>Release year: <%= @song.release_year %></ul>
+<ul>Artist: <%= @song.artist_name %></ul>
+<ul>Genre: <%=@song.genre %></ul>
+
+<%= link_to "All songs", songs_path %>
